@@ -53,4 +53,9 @@ def get_alice():
 
 alice_text = '\n'.join([line for line in get_alice()])
 
-print(alice_text)
+other_text = []
+
+with open('/Users/ik/Codes/alice/data/textos.txt')as f:
+    for line in f.readlines():
+        if stripped_line := line.strip():
+            other_text.append(stripped_line)
