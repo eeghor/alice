@@ -59,3 +59,7 @@ with open('/Users/ik/Codes/alice/data/textos.txt')as f:
     for line in f.readlines():
         if stripped_line := line.strip():
             other_text.append(stripped_line)
+
+text_word_count = Counter(word for line in other_text for word in line.split()).most_common()
+
+print(text_word_count)
