@@ -55,14 +55,20 @@ def get_alice():
             if ('[' not in line) and ('*' not in line):
                 yield ''.join([ch for ch in line if ch not in punctuation])
 
+def get_other_text():
+
+    other_text = []
+    
+    with open('/Users/ik/Codes/alice/data/textos.txt')as f:
+        for line in f.readlines():
+            if stripped_line := line.strip():
+                other_text.append(stripped_line)
+
+    return other_text
+
+
 alice_text = '\n'.join([line for line in get_alice()])
-
-other_text = []
-
-with open('/Users/ik/Codes/alice/data/textos.txt')as f:
-    for line in f.readlines():
-        if stripped_line := line.strip():
-            other_text.append(stripped_line)
+other_text = get_other_text()
 
 text_word_count = Counter(word for line in other_text for word in line.split()).most_common()
 
