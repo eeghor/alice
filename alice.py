@@ -71,5 +71,6 @@ alice_text = '\n'.join([line for line in get_alice()])
 other_text = get_other_text()
 
 text_word_count = Counter(word for line in other_text for word in line.split()).most_common()
+alice_word_count = Counter(word for line in alice_text for word in line.split()).most_common()
 
 print(text_word_count)
