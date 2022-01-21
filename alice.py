@@ -38,7 +38,7 @@ class WordMapper:
                      'without', 'would', 'yet', 'you', 'your', 'yours', 'yourself', 'yourselves', '‘d', '‘ll', '‘m', '‘re', 
                      '‘s', '‘ve', '’d', '’ll', '’m', '’re', '’s', '’ve'}
 
- someficujj2 = defaultdict(int)
+ someficujj24rgr = defaultdict(int)
 
 def get_alice():
     
