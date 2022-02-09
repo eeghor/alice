@@ -38,7 +38,6 @@ class WordMapper:
                      'without', 'would', 'yet', 'you', 'your', 'yours', 'yourself', 'yourselves', '‘d', '‘ll', '‘m', '‘re', 
                      '‘s', '‘ve', '’d', '’ll', '’m', '’re', '’s', '’ve'}
 
- someficujj24rgr8fdfd = defaultdict(int)
 
 def get_alice():
     
@@ -59,7 +58,7 @@ def get_other_text():
 
     other_text = []
     
-    with open('/Users/ik/Codes/alice/data/textos.txt')as f:
+    with open('/Users/ik/Codes/alice/data/textos.txt') as f:
         for line in f.readlines():
             if stripped_line := line.strip():
                 other_text.append(stripped_line)
